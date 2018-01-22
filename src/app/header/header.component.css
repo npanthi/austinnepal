@@ -1,0 +1,46 @@
+.austinLogo .nepalLogo {
+  width:25%;
+}
+.headerContent {
+  width:50%;
+  text-align: center;
+  padding: 10px;
+  font-size: 59px;
+  font-color: blue;
+  text-align: center;
+  font-weight: bold;
+  color: blue;
+  padding-left:150px;
+  background: none;
+  font-style: italic;
+  font-family: dewara;
+  font-stretch: expanded;
+  font-feature-settings: unset;
+  display: inline;
+
+}
+.austinLogo > img,.nepalLogo >img{
+  width:150px;
+  height:100px;
+}
+.nepalLogo > img {
+  float: right;
+}
+.headerStuff {
+
+  background-color: beige;
+  height:auto;
+  width:100%;
+}
+.jumbotron {
+  display: inline;
+}
+.headerContent span > h6 {
+  height :30px;
+  width :80px;
+  display: inline;
+  color: red;
+  font-size:26px;
+  font-weight:bold;
+  top:2px;
+}

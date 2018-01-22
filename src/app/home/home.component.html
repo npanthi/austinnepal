@@ -1,0 +1,112 @@
+<div>
+  <h2>Latest Release</h2>
+  <hr/>
+</div>
+
+<div>
+  <div class="row">
+    <div class="col-lg-6">
+      <span><h3>Bhadragoal</h3></span>
+      <div *ngFor="let data of bhadragoalData.items; let i=index">
+
+    <span *ngIf="i<3">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <span><h3>Jire Khursani</h3></span>
+      <div *ngFor="let data of jireKhursaniData.items; let i=index">
+
+    <span *ngIf="i<3">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <span><h3>Break Fail</h3></span>
+        <div *ngFor="let data of breakFailData.items; let i=index">
+
+    <span *ngIf="i<3">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+       <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <span><h3>Meri Bassai</h3></span>
+        <div *ngFor="let data of meriBassaiData.items; let i=index">
+
+    <span *ngIf="i<3">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+      <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.small.height"/></a>
+
+  </span>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <span><h3>Hakka Haki</h3></span>
+      <div *ngFor="let data of hakkaHakkiData.items; let i=index">
+
+    <span *ngIf="i<3">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+       <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <span><h3>Short Movie</h3></span>
+      <div *ngFor="let data of shortMovieData.items; let i=index">
+
+    <span *ngIf="i<3">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+      <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.small.height"/></a>
+
+  </span>
+
+
+    </div>
+
+  </div>
+
+
+
+</div>
+
+</div>
+
+<!-- Pop up youtube model -->
+<div *ngIf="showModel" id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span (click)="close()" class="close" title="Close">&times;</span>
+
+    <iframe width="100%" height="100%" [src]="sanitizer.bypassSecurityTrustResourceUrl(videoUrl)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+</div>
+
+
+
+
+
+

@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!--<div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -16,5 +16,52 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul> -->
+
+<div class="container-fluid">
+    <div class="row">
+      <!--Inserting header component -->
+      <app-header></app-header>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 lg-md-12  nav nav-justified nav-tabs">
+            <nav class = "navbar navbar-inverse customNav">
+                <a routerLink="/home">HOME</a>
+                <a routerLink="/movies">MOVIES</a>
+                <a routerLink="/news">NEWS</a>
+                <a routerLink="/contact">CONTACT US</a>
+               <form class=" form-inline">
+                <input class=" form-control" type="text" placeholder="search"/>
+                <button  class="btn btn-success" type="submit">SEARCH</button>
+                 </form>
+            </nav>
+      </div>
+
+    </div>
+    <div class="row grid-area">
+     <div class="col-lg-3 col-md-3 col-sm-3 right-sidebar">
+       <app-austinsidebar> </app-austinsidebar>
+     </div>
+      <div class ="col-lg-6 col-md-6 col-sm-6 main-area">
+
+      <!-- Add Nav bar -->
+        <!-- Using Ng-Routing for routing the app -->
+        <!-- show the content of each router item -->
+        <!-- show the content of each router item -->
+        <router-outlet> </router-outlet>
+
+      </div>
+
+      <div class ="col-lg-3 col-md-3 col-sm-3 left-sidebar">
+      <app-nepalsidebar></app-nepalsidebar>
+      </div>
+
+    </div>
+
+  <div class="row ">
+  <div class="panel-footer">
+
+<app-footer> </app-footer>
+
+
 

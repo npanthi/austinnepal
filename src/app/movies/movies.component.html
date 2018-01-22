@@ -1,0 +1,28 @@
+<div class="row">
+ <button class="btn btn-success"  (click)="movies('nepaliMovie')">Nepali Movies</button>
+  <button class="btn btn-success"  (click)="movies('hindiMovie')">Hindi Movies</button>
+  <button class="btn btn-success" (click)="movies('englishiMovie')">English Movies</button>
+
+</div>
+
+<div class="row">
+<div *ngFor="let data of listOfMovies.items; let i=index" >
+  <span *ngIf="i<15" class="col-lg-6">
+      <a href="javascript:void(0)" ><span class="moviesTitle" (click)="video(data.contentDetails.upload.videoId)">{{data.snippet.title}}</span></a>
+<a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.medium.height"/></a>    <hr/>
+  </span>
+</div>
+</div>
+
+
+<!-- Pop up youtube model -->
+<div *ngIf="showModel" id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span (click)="close()" class="close" title="Close">&times;</span>
+
+    <iframe width="100%" height="100%" [src]="sanitizer.bypassSecurityTrustResourceUrl(videoUrl)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+</div>

@@ -1,0 +1,53 @@
+<div class="austinSideBar">
+  <!--<div>
+    <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;height=217&amp;wkst=1&amp;bgcolor=%23cccccc&amp;src=15129181ivi4smnhr3uaimm2jo%40group.calendar.google.com&amp;color=%2342104A&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FChicago" style="border:solid 1px #777" width="210" height="217" frameborder="0" scrolling="no"></iframe>
+  </div>
+  <div class="nepaliCalender">
+    <iframe src="http://nepalicalendar.rat32.com/addons/nepali-calendar-aja-ko-din.php" frameborder="0" scrolling="no" marginwidth="0" float="right" marginheight="0" style="border:none; overflow:hidden; width:200px; height:217px;" allowtransparency="true"></iframe>
+  </div>
+
+ <div class="weather">
+   <div style="width: 210px;"><iframe style="display: block;" src="https://cdnres.willyweather.com/widget/loadView.html?id=78054" width="210" height="228" frameborder="0" scrolling="no"></iframe><a style="display: block;margin: -20px 0 0 0;text-indent: -9999em;z-index: 1;position: relative;height: 20px" href="https://www.willyweather.com/tx/travis-county/austin.html" rel="nofollow">https://www.willyweather.com/tx/travis-county/austin.html</a></div>
+ </div>
+  <div class="converter">
+       <iframe src="http://saralnepali.com/widgets/nepali-date-converter.php " frameborder="0" scrolling="no" marginwidth="0" marginheight="0" style="border:none; overflow:hidden; width:200px;height:300px" allowtransparency="true"></iframe>
+  </div>
+
+  <div>
+    <iframe width="210" height="250" src="https://www.youtube.com/embed/-oKVltstHIs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </div> -->
+  <!-- Trigger/Open The Modal -->
+  <!--<button id="myBtn" (click)="launchVideo()">Watch Now</button>-->
+
+  <!-- The Modal -->
+  <div *ngIf="showModel" id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span (click)="close()" class="close" title="Close">&times;</span>
+
+      <iframe width="100%" height="100%" [src]="sanitizer.bypassSecurityTrustResourceUrl(videoUrl)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+
+
+
+<div><Strong>New Release Movies</Strong></div>
+  <div *ngFor="let data of localVar.items; let i=index">
+
+    <span *ngIf="i<9">
+      <a href="javascript:void(0)" ><span class="moviesTitle" (click)="video(data.contentDetails.upload.videoId)">{{data.snippet.title}}</span></a>
+      <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.contentDetails.upload.videoId)" width="268" height="data.snippet.thumbnails.medium.height"/></a>
+
+  </span>
+
+
+
+
+  </div>
+
+</div>
+
+

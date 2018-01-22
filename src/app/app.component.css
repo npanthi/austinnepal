@@ -1,0 +1,65 @@
+/* different style for nested spans */
+.show-grid [class*="col*"] [class*="col*"] {
+  background-color: #eee;
+}
+
+.grid-area {
+  width:100%;
+  height:100%;
+}
+.left-sidebar .right-sidebar {
+  width :20%;
+  background-color: yellow;
+  height :100%;
+}
+.main-content {
+  width:60%;
+  background-color: antiquewhite;
+  height :100%;
+}
+.customNav > a {
+  padding: 15px;
+  color: white;
+  padding:20px;
+  position:relative;
+  top:13px;
+  font-family: ariel;
+  font-size: 16px;
+  font-weight: bold;
+  color: darkblue;
+
+}
+
+.jumbotron {
+  margin-bottom: auto;
+}
+.form-inline {
+  display:inline;
+  float:right;
+  position: relative;
+  top: 8px;
+  margin-right:60px;
+}
+.form-inline > input {
+  margin-right:10px;
+}
+
+.main-area {
+  border:1px solid red;
+
+}
+.right-sidebar {
+  /*border: 1px solid lightslategray;*/
+}
+.left-sidebar {
+  /*border : 1px solid darkgray;*/
+
+}
+.customNav {
+  width:100%;
+  background-color: darkgray;
+
+}
+.panel-footer {
+  background-color: black;
+}
