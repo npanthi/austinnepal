@@ -21,7 +21,7 @@ export class YoutubeApiService {
    nepaliShortMoviesPlayListAPI : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL9DARAjEDbdDIkFuEFVmnq1cP3PJcrhzA&maxResults=50&key=" + this.myAPIKey;
    allModernSongAPIList : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL9DARAjEDbdDTnkaFBzRWjnbgkqGnqe2i&maxResults=50&key="+ this.myAPIKey;
    myPlayList : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLCusKB-IHMzftJlDk08NyF8r8v5fh2d0G&key="+ this.myAPIKey;
-   hindiMovieList : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL1219761C842A34AB&maxResults=50&key="+ this.myAPIKey;
+   hindiMovieList : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLthizvY3wuX8ofqdMFWBmo66TUM56_xLy&maxResults=50&key="+ this.myAPIKey;
   englishMovieList : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL-kg-GL4FKRTYe2CwXTl12ffpiJJTEgSy&maxResults=50&key="+ this.myAPIKey;
    constructor(private httpService:HttpClient) { }
 
