@@ -5,7 +5,8 @@ import {HttpClient} from "@angular/common/http";
 
 @Injectable()
 export class YoutubeApiService {
-
+  name : string = " ";
+  videoContent:string='';
   youtubeData : any[];
   myAPIKey : string = "AIzaSyDpgdG4ipJ5NyrmDqTpCLY5bnN3_lv0dnU";
   url:string = "https://www.googleapis.com/youtube/v3/activities?part=snippet%2CcontentDetails&channelId=UC08i2mnmdrJwu-Lq4zDZKYg&maxResults=50&key=AIzaSyDpgdG4ipJ5NyrmDqTpCLY5bnN3_lv0dnU"
@@ -23,6 +24,7 @@ export class YoutubeApiService {
    myPlayList : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLCusKB-IHMzftJlDk08NyF8r8v5fh2d0G&key="+ this.myAPIKey;
    hindiMovieList : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLthizvY3wuX8ofqdMFWBmo66TUM56_xLy&maxResults=50&key="+ this.myAPIKey;
   englishMovieList : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL-kg-GL4FKRTYe2CwXTl12ffpiJJTEgSy&maxResults=50&key="+ this.myAPIKey;
+  searchAnything : string = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q="+this.videoContent+"&key="+this.myAPIKey;
    constructor(private httpService:HttpClient) { }
 
 getHindiMovie(){
@@ -34,6 +36,7 @@ getEnglishMovie(){
 }
 
    getNepaliMovie(){
+  console.log("api",this.nepaliMoviePlayListAPI);
   return this.httpService.get(this.nepaliMoviePlayListAPI);
 }
 getmeriBassai(){
@@ -65,5 +68,12 @@ getHighlightMovies(){
   defaultURL(url){
     return this.httpService.get(url);
   }
-
+  searchVideo(value){
+    this.videoContent = value;
+    console.log("value",value);
+    return this.httpService.get(this.searchAnything);
+}
+  findVideo(name){
+    console.log(name);
+  }
 }

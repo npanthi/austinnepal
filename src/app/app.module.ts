@@ -19,6 +19,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AustinsidebarComponent } from './austinsidebar/austinsidebar.component';
 import { NepalsidebarComponent } from './nepalsidebar/nepalsidebar.component';
 import { PopUpModelComponent } from './pop-up-model/pop-up-model.component';
+import { SearchComponent } from './search/search.component';
 
 
 
@@ -33,7 +34,8 @@ import { PopUpModelComponent } from './pop-up-model/pop-up-model.component';
     ContactComponent,
     AustinsidebarComponent,
     NepalsidebarComponent,
-    PopUpModelComponent
+    PopUpModelComponent,
+    SearchComponent
 
   ],
   imports: [
@@ -57,6 +59,10 @@ import { PopUpModelComponent } from './pop-up-model/pop-up-model.component';
       {
         path : 'contact',
         component: ContactComponent
+      },
+      {
+        path : 'search',
+        component: SearchComponent
       },
     ])
   ],

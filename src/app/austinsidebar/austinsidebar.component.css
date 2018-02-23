@@ -69,3 +69,8 @@
   background: red;
   color: white;
 }
+
+@media only screen and (max-width:480px) {
+  .hide_on_mobile {
+    display: none !important;}
+}

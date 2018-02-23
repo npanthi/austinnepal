@@ -24,8 +24,9 @@ export class AustinsidebarComponent implements OnInit {
   constructor(private myService:YoutubeApiService,private httpclient :HttpClient,private  popUp:PopUpModelComponent,public sanitizer: DomSanitizer) { }
 
   ngOnInit() {
-    this.myService.getHighlightMovies().subscribe((data) => this.localVar = data);
 
+     this.myService.getHighlightMovies().subscribe((data) => this.localVar = data);
+    //console.log("Nisan Data",this.local)
   }
 
   showYouTubeVideo(id){

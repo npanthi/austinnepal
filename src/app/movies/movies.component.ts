@@ -23,6 +23,8 @@ name : string;
   youtubeId : string = null;
   youtubeVideoUrl : string="https://www.youtube.com/embed/";
   videoUrl : string = "";
+  homePage:boolean = false;
+  loadMore:boolean= false;
 
   constructor(private myYoutubeApi : YoutubeApiService, private httpClient:HttpClient,public sanitizer: DomSanitizer){
 
@@ -49,6 +51,7 @@ name : string;
   }
 
   movies(movieName){
+    this.loadMore = true;
     if(movieName ==='englishiMovie'){
 
       this.myYoutubeApi.getEnglishMovie().subscribe((data) => this.listOfMovies = data

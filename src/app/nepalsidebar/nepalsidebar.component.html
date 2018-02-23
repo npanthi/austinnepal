@@ -1,7 +1,30 @@
-<script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
+<!--<script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
 <div>
 
   <div class="nepaliWeather">
     <iframe src="http://saralnepali.com/widgets/nepali-rashifal.php " frameborder="0" scrolling="no" marginwidth="0" marginheight="0" style="border:none; overflow:hidden; max-width:800px;height:1948px" allowtransparency="false" ></iframe>
   </div>
+</div>-->
+<div><strong>Nepali Short Movies</strong><hr></div>
+<div *ngFor="let data of nepaliVideoSideBar.items; let i=index">
+
+    <span *ngIf="i<9">
+      <a href="javascript:void(0)" ><span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a>
+      <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.medium.height"/></a>
+
+  </span>
+
+</div>
+
+
+
+<div *ngIf="showModel" id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span (click)="close()" class="close" title="Close">&times;</span>
+
+    <iframe width="100%" height="100%" [src]="sanitizer.bypassSecurityTrustResourceUrl(videoUrl)" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
 </div>

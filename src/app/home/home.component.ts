@@ -13,7 +13,7 @@ export class HomeComponent {
 
   someProperty: string = '';
   public myPlayList: any;
-  breakFailData : any;
+  public breakFailData : any;
   bhadragoalData : any;
   jireKhursaniData : any;
   meriBassaiData : any;
@@ -36,6 +36,7 @@ export class HomeComponent {
       this.myService.getmeriBassai().subscribe((data) => this.meriBassaiData = data);
       this.myService.getHakkaHakki().subscribe((data) => this.hakkaHakkiData = data);
       this.myService.getNepaliShortMovie().subscribe((data) => this.shortMovieData = data);
+      //console.log("BreakFailApiCall",this.breakFailData);
   }
   close(){
     this.showModel = false;
