@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
-import * as $ from 'jquery';
+import { SlickModule } from 'ngx-slick';
 
 import {HttpClientModule} from '@angular/common/http'
 
@@ -23,6 +23,9 @@ import { SearchComponent } from './search/search.component';
 
 
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,14 +38,20 @@ import { SearchComponent } from './search/search.component';
     AustinsidebarComponent,
     NepalsidebarComponent,
     PopUpModelComponent,
-    SearchComponent
+    SearchComponent,
+
+
 
   ],
   imports: [
     BrowserModule,FormsModule,
     HttpClientModule,
+    SlickModule.forRoot(),
 
     RouterModule.forRoot([
+      { path: '',
+        redirectTo: 'home',
+        pathMatch: 'full' },
       {
         path : 'home',
         component : HomeComponent

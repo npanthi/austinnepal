@@ -32,7 +32,7 @@ name : string;
 
   ngOnInit() {
 
-
+ console.log("Movies Works");
   }
 
   video(id){

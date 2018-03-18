@@ -21,7 +21,17 @@
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
              <li><a routerLink="/home">HOME     </a></li>
-              <li><a routerLink="/movies">MOVIES</a></li>
+
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" a routerLink="/movies">MOVIES
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a routerLink="/movies">HollyWood Movies</a></li>
+                  <li><a routerLink="/movies">BollyWood Movies</a></li>
+                  <li><a routerLink="/movies">Nepali Movies</a></li>
+                </ul>
+              </li>
+
               <li><a routerLink="/news">NEWS    </a></li>
               <li><a routerLink="/contact">CONTACT US</a></li>
             </ul>
@@ -50,7 +60,7 @@
     <!--<div class="col-md-3 col-lg-3 hide_on_mobile">
       <app-austinsidebar> </app-austinsidebar>
     </div>-->
-    <div class ="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class ="">
 
 
 
@@ -58,9 +68,8 @@
 
     </div>
 
-    <!--<div class ="col-md-3 col-lg-3 hide_on_mobile">
-      <app-nepalsidebar></app-nepalsidebar>
-    </div>-->
+
+
 
   </div>
 

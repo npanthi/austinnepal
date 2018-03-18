@@ -126,3 +126,15 @@
 .well {
   margin-bottom: 0px;
 }
+.movies {
+  display: none;
+}
+.moviesMain:hover .movies {
+  display:list-item;
+  list-style: none;
+  float : right;
+
+}
+.moviesMain:hover .movies:hover {
+  color:white;
+  }

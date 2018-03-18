@@ -56,3 +56,9 @@
   background: red;
   color: white;
 }
+.col-sm-6 .movieImage {
+  margin:5%;
+  width:80%;
+  margin-top:1px;
+  margin-bottom:1px;
+}
