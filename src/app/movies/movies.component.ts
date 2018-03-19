@@ -4,7 +4,7 @@ import {HttpClient} from "@angular/common/http";
 import { NgModel } from '@angular/forms';
 import {forEach} from "@angular/router/src/utils/collection";
 import { DomSanitizer } from '@angular/platform-browser';
-
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -17,6 +17,9 @@ export class MoviesComponent implements OnInit {
 hindiMovies : boolean = false;
 nepaliMovies : boolean = false;
 englishMovies : boolean = false;
+movieFromUrl : any;
+href : string;
+
 showModel : boolean = false;
 listOfMovies : any;
 name : string;
@@ -26,13 +29,19 @@ name : string;
   homePage:boolean = false;
   loadMore:boolean= false;
 
-  constructor(private myYoutubeApi : YoutubeApiService, private httpClient:HttpClient,public sanitizer: DomSanitizer){
+  constructor(private myYoutubeApi : YoutubeApiService, private httpClient:HttpClient,public sanitizer: DomSanitizer,private router :Router){
 
   }
 
   ngOnInit() {
 
- console.log("Movies Works");
+this.initVideo();
+  }
+
+  initVideo(){
+    this.href = this.router.url;
+  this.movieFromUrl = this.href.split("/");
+  this.movies(this.movieFromUrl[2]);
   }
 
   video(id){
@@ -50,11 +59,11 @@ name : string;
     this.showModel = false;
   }
 
-  movies(movieName){
-    this.loadMore = true;
-    if(movieName ==='englishiMovie'){
 
-      this.myYoutubeApi.getEnglishMovie().subscribe((data) => this.listOfMovies = data
+
+  movies(movieName){
+    if(movieName ==='englishMovie'){
+        this.myYoutubeApi.getEnglishMovie().subscribe((data) => this.listOfMovies = data
         );}
       else if (movieName ==='hindiMovie'){
         this.myYoutubeApi.getHindiMovie().subscribe((data) => this.listOfMovies = data

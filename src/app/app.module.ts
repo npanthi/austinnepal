@@ -58,8 +58,19 @@ import { SearchComponent } from './search/search.component';
 
       },
       {
-        path : 'movies',
+        path: 'movies/englishMovie',
         component: MoviesComponent
+
+      },
+      {
+        path: 'movies/nepaliMovie',
+        component: MoviesComponent
+
+      },
+      {
+        path: 'movies/hindiMovie',
+        component: MoviesComponent
+
       },
       {
         path : 'news',

@@ -138,3 +138,6 @@
 .moviesMain:hover .movies:hover {
   color:white;
   }
+.movieClass {
+  cursor: pointer;
+ }

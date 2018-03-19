@@ -62,3 +62,52 @@
   margin-top:1px;
   margin-bottom:1px;
 }
+
+
+[animate-on-change] {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+[animate-on-change].changed {
+  background-color: red;
+  transition: none;
+  -webkit-transition: none;
+}
+
+.flip-container {
+  -webkit-perspective: 800;
+  perspective: 800;
+  position: relative;
+
+}
+.flip-container .card.flipped {
+  transform: rotatex(180deg);
+  -ms-transform: rotatex(180deg);
+  -webkit-transform: rotatex(180deg);
+}
+
+.flip-container .card {
+  height: 100px;
+  width: 100px;
+  transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+}
+
+.flip-container .card .face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  z-index: 2;
+}
+
+.flip-container .card .front {
+  z-index: 1;
+}
+
+.flip-container .card .back {
+  -webkit-transform: rotatex(-180deg);
+}
+
