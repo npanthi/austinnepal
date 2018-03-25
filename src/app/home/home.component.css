@@ -52,27 +52,62 @@
 }
 
 .subSectionHeading {
-  left:40%;
-  right:40%;
   font-size: 14px;
   font-weight: bold;
 }
 
 @media only screen and (max-width: 600px) {
   .subSectionHeading {
-    left:5%;
+    text-align: center;
   }
   .col-sm-3,.subSectionHeading {
     margin-left:20px;
+  }
+  img {
+    margin-left:10px;
   }
 }
 .moviesTitle {
   display:none;
 }
 
-.h3 {
-  background:gray;
-}
+
 hr {
-  background-color: gray;
+  margin-bottom: 5px;
+  margin-top:5px;
 }
+
+.col-sm-12,h3 {
+  background-color: gray;
+  padding-top:10px;
+  padding-bottom:10px;
+  left:0%;
+  text-align: center;
+  color:white;
+  font-size:20px;;
+}
+img  {
+  margin-left:auto;
+  margin-right:auto;
+  margin-left:20px;
+}
+.blink_me {
+  animation: blinker 1s linear infinite;
+  color:red;
+  padding-left:50px;
+  display: none;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.col-sm-3,.subSectionHeading {
+  cursor: pointer;
+}
+.redClass {
+  background-color: red;
+  color: white;
+
+}c

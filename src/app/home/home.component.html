@@ -122,22 +122,22 @@ This page is under construction
 
 <div class="row">
 
-  <div class="col-sm-3">
+  <div class="col-sm-3 teliserial"  title="Click Me for More Hakka Hakki" (click)="moreInfo()">
     <hr>
-    <span><h3>Hakka Haki</h3></span>
+    <span><h3 [ngClass]="{'redClass':showRed}">Hakka Haki<span class="blink_me">**Latest** </span></h3></span>
     <hr>
       <div *ngFor="let data of hakkaHakkiData.items; let i=index">
     <span *ngIf="i<1">
       <a href="javascript:void(0)">
       <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
-       <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.small.height"/></a>
+       <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
   </span>
 
     </div>
 
 
   </div>
-  <div class="col-sm-3">
+  <div class="col-sm-3 teliserial">
     <hr>
     <span><h3>Meri Bassai</h3></span>
     <hr>
@@ -146,13 +146,13 @@ This page is under construction
     <span *ngIf="i<1">
       <a href="javascript:void(0)" >
         <span class="moviesTitle" style="overflow:hidden;" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
-      <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.small.height"/></a>
+      <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
 
   </span>
 
     </div>
   </div>
-  <div class="col-sm-3">
+  <div class="col-sm-3 ">
     <hr>
     <span><h3>Break Fail</h3></span>
     <hr>
@@ -161,7 +161,7 @@ This page is under construction
     <span *ngIf="i<1">
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
-       <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.small.height"/></a>
+       <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
   </span>
   </div>
   </div>
@@ -174,7 +174,7 @@ This page is under construction
     <span *ngIf="i<1">
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
-        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.small.height"/></a>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
   </span>
     </div>
   </div>

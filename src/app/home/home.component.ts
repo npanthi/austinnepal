@@ -28,6 +28,8 @@ export class HomeComponent {
   videoUrl : string = "";
   modernSongs:any;
   nepaliPrank:any;
+  showRed : boolean=false;
+  myClass :any = "";
 
 
   constructor(private myService: YoutubeApiService, private httpclient: HttpClient,public sanitizer: DomSanitizer) {
@@ -62,6 +64,14 @@ export class HomeComponent {
     console.log(this.videoUrl);
 
     // console.log("ID",id);
+  }
+  moreInfo(){
+    if(!this.showRed){
+      this.showRed = true;
+    }
+     else
+      this.showRed = false;
+       console.log("Clicked on Hakka Hakki",this.showRed);
   }
 
 }
