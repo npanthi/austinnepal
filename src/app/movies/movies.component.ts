@@ -64,6 +64,7 @@ this.initVideo();
   movies(movieName){
     if(movieName ==='englishMovie'){
         this.myYoutubeApi.getEnglishMovie().subscribe((data) => this.listOfMovies = data
+
         );}
       else if (movieName ==='hindiMovie'){
         this.myYoutubeApi.getHindiMovie().subscribe((data) => this.listOfMovies = data

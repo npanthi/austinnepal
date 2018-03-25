@@ -50,3 +50,29 @@
   background: red;
   color: white;
 }
+
+.subSectionHeading {
+  left:40%;
+  right:40%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .subSectionHeading {
+    left:5%;
+  }
+  .col-sm-3,.subSectionHeading {
+    margin-left:20px;
+  }
+}
+.moviesTitle {
+  display:none;
+}
+
+.h3 {
+  background:gray;
+}
+hr {
+  background-color: gray;
+}

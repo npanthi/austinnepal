@@ -24,12 +24,25 @@ export class YoutubeApiService {
    myPlayList : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLCusKB-IHMzftJlDk08NyF8r8v5fh2d0G&key="+ this.myAPIKey;
    hindiMovieList : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLthizvY3wuX8ofqdMFWBmo66TUM56_xLy&maxResults=50&key="+ this.myAPIKey;
   englishMovieList : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL-kg-GL4FKRTYe2CwXTl12ffpiJJTEgSy&maxResults=50&key="+ this.myAPIKey;
+  movieTrailer : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL9DARAjEDbdAk7ct0Hwqs39_yZbbNLtCJ&maxResults=50&key="+ this.myAPIKey;
+  hindiTrailer : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLItqFRzgD5SQpgWuN9ziOh9Pa2kX8EE3h&maxResults=50&key="+ this.myAPIKey;
+  lokDohori : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL4QNnZJr8sROwteWJMT3dXhfayzM67SGK&maxResults=50&key="+ this.myAPIKey;
+  nepaliPrank : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL0z2lx5Xy5lFoQGNRzccautJoCcmV7NYa&maxResults=50&key="+ this.myAPIKey;
+
+
+
   searchAnything : string = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q="+this.videoContent+"&key="+this.myAPIKey;
    constructor(private httpService:HttpClient) { }
 
 getHindiMovie(){
   return this.httpService.get(this.hindiMovieList);
 }
+  prankVideo(){
+    return this.httpService.get(this.nepaliPrank);
+  }
+  getLokDohori(){
+    return this.httpService.get(this.lokDohori);
+  }
 
 getEnglishMovie(){
   return this.httpService.get(this.englishMovieList);
@@ -61,6 +74,18 @@ getHighlightMovies(){
     return this.httpService.get(this.url);
 
 }
+  getMovieTrailer(){
+    return this.httpService.get(this.movieTrailer);
+
+  }
+  hindiMovieTrailer(){
+  return this.httpService.get(this.hindiTrailer);
+
+}
+  allModernSongs(){
+    return this.httpService.get(this.allModernSongAPIList);
+
+  }
   getfromMyPlayList(){
     return this.httpService.get(this.myPlayListURL);
 

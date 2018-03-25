@@ -4,7 +4,7 @@
 <div *ngFor="let data of listOfMovies.items; let i=index" >
 
  <span *ngIf="i<15" class="col-lg-3 col-xl-3 col-md-3 col-sm-6">
-<a href="javascript:void(0)" ><span class="moviesTitle" (click)="video(data.contentDetails.upload.videoId)">{{data.snippet.title}}</span></a>
+<!--<a href="javascript:void(0)" ><span class="moviesTitle" (click)="video(data.contentDetails.upload.videoId)">{{data.snippet.title}}</span></a>-->
   <span>
      <a href="javascript:void(0)" ><img class="movieImage"[src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.medium.height"/><br>
 

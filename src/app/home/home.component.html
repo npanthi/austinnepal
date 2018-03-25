@@ -2,6 +2,7 @@
 
 
 
+
 <div>
   <h2>Latest Release</h2>
   <hr/>
@@ -114,5 +115,374 @@
 
 
 
--->
+
 This page is under construction
+-->
+<div class="">
+
+<div class="row">
+
+  <div class="col-sm-3">
+    <hr>
+    <span><h3>Hakka Haki</h3></span>
+    <hr>
+      <div *ngFor="let data of hakkaHakkiData.items; let i=index">
+    <span *ngIf="i<1">
+      <a href="javascript:void(0)">
+      <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+       <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+
+    </div>
+
+
+  </div>
+  <div class="col-sm-3">
+    <hr>
+    <span><h3>Meri Bassai</h3></span>
+    <hr>
+    <div *ngFor="let data of meriBassaiData.items; let i=index">
+
+    <span *ngIf="i<1">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" style="overflow:hidden;" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+      <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.small.height"/></a>
+
+  </span>
+
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <hr>
+    <span><h3>Break Fail</h3></span>
+    <hr>
+    <div *ngFor="let data of breakFailData.items; let i=index">
+
+    <span *ngIf="i<1">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+       <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+  </div>
+  </div>
+  <div class="col-sm-3">
+    <hr>
+    <span><h3>Bhadragoal</h3></span>
+    <hr>
+    <div *ngFor="let data of bhadragoalData.items; let i=index">
+
+    <span *ngIf="i<1">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)" width="268" height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+  </div>
+</div>
+<hr>
+  <div class="row">
+    <div class="col-sm-12 subSectionHeading">
+      New Release Nepali Movie Trailer
+    </div>
+    </div><hr>
+  <div class="row">
+    <div class="col-sm-3"><div *ngFor="let data of movieTrailer.items; let i=index">
+
+    <span *ngIf="i<1">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img  [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of movieTrailer.items; let i=index">
+
+    <span *ngIf="i>0 && i<2">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img  [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+    <div class="col-sm-3"><div *ngFor="let data of movieTrailer.items; let i=index">
+
+    <span *ngIf="i>1 && i<3">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img  [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+   <div class="col-sm-3"><div *ngFor="let data of movieTrailer.items; let i=index">
+
+    <span *ngIf="i>2 && i<4">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img  [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+
+
+    </div>
+
+  <hr>
+  <div class="row">
+    <div class="row">
+      <div class="col-sm-12 subSectionHeading">
+        Hindi Movie Trailer
+      </div>
+    </div><hr>
+    <div class="col-sm-3"><div *ngFor="let data of hindiTrailer.items; let i=index">
+
+    <span *ngIf="i<1">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of hindiTrailer.items; let i=index">
+
+    <span *ngIf="i>0 && i<2">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of hindiTrailer.items; let i=index">
+
+    <span *ngIf="i>1 && i<3">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of hindiTrailer.items; let i=index">
+
+    <span *ngIf="i>2 && i<4">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+   <div class="row ">
+     <div class="col-sm-12 subSectionHeading">
+       Nepali Short Movie
+     </div></div><hr>
+    <div class="col-sm-3"><div *ngFor="let data of shortMovieData.items; let i=index">
+
+    <span *ngIf="i<1">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of shortMovieData.items; let i=index">
+
+    <span *ngIf="i>0 && i<2">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of shortMovieData.items; let i=index">
+
+    <span *ngIf="i>1 && i<3">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of shortMovieData.items; let i=index">
+
+    <span *ngIf="i>2 && i<4">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+  </div>
+
+  <hr>
+  <div class="row">
+    <div class="row">
+      <div class="col-sm-12 subSectionHeading">
+        All Modern Songs
+      </div></div><hr>
+    <div class="col-sm-3"><div *ngFor="let data of modernSongs.items; let i=index">
+
+    <span *ngIf="i<1">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of modernSongs.items; let i=index">
+
+    <span *ngIf="i>0 && i<2">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of modernSongs.items; let i=index">
+
+    <span *ngIf="i>1 && i<3">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of modernSongs.items; let i=index">
+
+    <span *ngIf="i>2 && i<4">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+  </div>
+ <hr>
+  <div class="row">
+    <div class="row">
+      <div class="col-sm-12 subSectionHeading">
+        Nepali Lok Dohori
+      </div></div><hr>
+    <div class="col-sm-3"><div *ngFor="let data of lokDohori.items; let i=index">
+
+    <span *ngIf="i<1">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of lokDohori.items; let i=index">
+
+    <span *ngIf="i>0 && i<2">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of lokDohori.items; let i=index">
+
+    <span *ngIf="i>1 && i<3">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of lokDohori.items; let i=index">
+
+    <span *ngIf="i>2 && i<4">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+  </div>
+
+<hr>
+  <div class="row">
+    <div class="row">
+      <div class="col-sm-12 subSectionHeading">
+      Nepali Prank Video</div>
+    </div><hr>
+    <div class="col-sm-3"><div *ngFor="let data of nepaliPrank.items; let i=index">
+
+    <span *ngIf="i<1">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of nepaliPrank.items; let i=index">
+
+    <span *ngIf="i>0 && i<2">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of nepaliPrank.items; let i=index">
+
+    <span *ngIf="i>1 && i<3">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+
+    <div class="col-sm-3"><div *ngFor="let data of nepaliPrank.items; let i=index">
+
+    <span *ngIf="i>2 && i<4">
+      <a href="javascript:void(0)" >
+        <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
+        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+  </span>
+    </div>
+
+    </div>
+  </div>
+
