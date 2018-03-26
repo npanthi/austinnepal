@@ -56,12 +56,12 @@
   font-weight: bold;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .subSectionHeading {
     text-align: center;
   }
   .col-sm-3,.subSectionHeading {
-    margin-left:20px;
+    /*margin-left:20px;*/
   }
   img {
     margin-left:10px;
@@ -113,13 +113,5 @@ img  {
 
 }
 
-.row {
-  margin-left:0px;
-  margin-right: 0px;
-}
-html, body {
-  overflow-x: hidden;
-}
-body {
-  position: relative;
-}
+
+
