@@ -91,6 +91,7 @@ img  {
   margin-left:auto;
   margin-right:auto;
   /*margin-left:20px;*/
+  width:98%;
 }
 .blink_me {
   animation: blinker 1s linear infinite;
@@ -123,4 +124,52 @@ html, body {
 body {
   position: relative;
 }
+
+.playButtonAdjustment {
+  top:68% !important;
+}
+
+
+.playButton {
+  background: rgba(7, 20, 30, 0.7);
+  /*background: red;*/
+  height: 3em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 4em;
+  margin: -25px 0 0 -25px;
+  /*border: .2em solid #3b4249;*/
+  /*border:.2em solid white;*/
+  border-radius: .8em;
+  cursor: pointer;
+  /* z-index: 2;*/
+  opacity: 1;
+  box-shadow: 0 0 1em rgba(255, 255, 255, 0.25);
+  transition: all .4s
+}
+.playButton:hover {
+  cursor: pointer;
+  /*background: rgba(7, 20, 30, 0.7);*/
+  background: red;
+  border: .2em solid white;
+}
+.insidePlayButton {
+  position: relative;
+  height: 100%;
+}
+.insidePlayButton:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -7px;
+}
+
 

@@ -131,8 +131,11 @@ This page is under construction
     <span *ngIf="i<1">
       <a href="javascript:void(0)">
       <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
-       <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+       <a href="javascript:void(0)" ><img  [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+        <button class="playButton playButtonAdjustment">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
 
     </div>
 
@@ -148,7 +151,9 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" style="overflow:hidden;" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
       <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-
+        <button class="playButton playButtonAdjustment">
+            <span class="insidePlayButton"></span>
+        </button>
   </span>
 
     </div>
@@ -163,7 +168,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+        <button class="playButton playButtonAdjustment">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
   </div>
   </div>
   <div class="col-sm-3">
@@ -176,7 +184,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+      <button class="playButton playButtonAdjustment">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
   </div>
 </div>
@@ -195,7 +206,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img  [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+        <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -206,7 +220,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img  [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+      <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -216,7 +233,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img  [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+        <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -226,7 +246,11 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img  [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+        <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+
+    </span>
     </div>
 
     </div>
@@ -248,7 +272,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+    <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -259,7 +286,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -270,7 +300,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -281,7 +314,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -298,7 +334,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -309,7 +348,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -320,7 +362,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -331,7 +376,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -349,7 +397,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -360,7 +411,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -371,7 +425,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -382,7 +439,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -399,7 +459,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -410,7 +473,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -421,7 +487,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -432,7 +501,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -450,7 +522,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -461,7 +536,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
@@ -472,6 +550,9 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
+ <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
   </span>
     </div>
 
@@ -483,7 +564,10 @@ This page is under construction
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
-  </span>
+  <button class="playButton">
+            <span class="insidePlayButton"></span>
+        </button>
+    </span>
     </div>
 
     </div>
