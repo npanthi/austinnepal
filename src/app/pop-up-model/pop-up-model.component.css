@@ -8,6 +8,17 @@ and (-webkit-device-pixel-ratio : 3) {
 }
 
 @media only screen
+and (device-width : 812px)
+and (device-height : 375px)
+and (-webkit-device-pixel-ratio : 3) {
+  .modal-content {
+    width:100% !important;
+    height:100% !important;
+    top:-123px !important;
+  }
+}
+
+@media only screen
 and (min-device-width: 375px)
 and (max-device-width: 667px)
 and (-webkit-min-device-pixel-ratio: 2)
