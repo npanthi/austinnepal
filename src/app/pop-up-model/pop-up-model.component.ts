@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-pop-up-model',
@@ -9,13 +10,27 @@ export class PopUpModelComponent implements OnInit {
 
      //modal : HTMLElement = document.getElementById('myModal');
    showModel : boolean = false;
+  youtubeId : string = "";
+  videoUrl : string = "";
+  youtubeVideoUrl :string = "https://www.youtube.com/embed/";
 
-
-  constructor() { }
+  constructor(private sanitizer : DomSanitizer) { }
 
   ngOnInit() {
 
-//this.launchVideo();
+this.launchVideo();
+  }
+
+  childVideo(id){
+    //console.log(id);
+    this.showModel = true;
+    //this.popUp.launchVideo();
+    //this.showModel = true;
+    this.youtubeId = id;
+    this.videoUrl = this.youtubeVideoUrl + id;
+    console.log(this.videoUrl);
+
+    // console.log("ID",id);
   }
 
 launchVideo(){

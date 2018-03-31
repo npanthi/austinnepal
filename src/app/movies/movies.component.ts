@@ -1,10 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,ViewChild,OnInit } from '@angular/core';
 import {YoutubeApiService} from "../youtube-api.service";
 import {HttpClient} from "@angular/common/http";
 import { NgModel } from '@angular/forms';
 import {forEach} from "@angular/router/src/utils/collection";
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
+import {PopUpModelComponent} from "../pop-up-model/pop-up-model.component";
+
+
+
 
 
 @Component({
@@ -28,6 +32,8 @@ name : string;
   videoUrl : string = "";
   homePage:boolean = false;
   loadMore:boolean= false;
+  @ViewChild(PopUpModelComponent) popUp : PopUpModelComponent;
+
 
   constructor(private myYoutubeApi : YoutubeApiService, private httpClient:HttpClient,public sanitizer: DomSanitizer,private router :Router){
 
@@ -45,6 +51,9 @@ this.initVideo();
   }
 
   video(id){
+    this.popUp.childVideo(id);
+}
+  /*video(id){
     //console.log(id);
     this.showModel = true;
     //this.popUp.launchVideo();
@@ -54,7 +63,9 @@ this.initVideo();
     console.log(this.videoUrl);
 
     // console.log("ID",id);
-  }
+  }*/
+
+
   close(){
     this.showModel = false;
   }

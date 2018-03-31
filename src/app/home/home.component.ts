@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 import {YoutubeApiService} from './../youtube-api.service';
 import {HttpClient} from "@angular/common/http";
 import { DomSanitizer } from '@angular/platform-browser';
+import {PopUpModelComponent} from "../pop-up-model/pop-up-model.component";
 
 @Component({
   selector: 'home',
@@ -9,7 +10,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent {
+export class HomeComponent implements OnInit{
 
   someProperty: string = '';
   public myPlayList: any;
@@ -31,6 +32,8 @@ export class HomeComponent {
   showRed : boolean=false;
   myClass :any = "";
 
+  @ViewChild(PopUpModelComponent) popUp : PopUpModelComponent;
+
 
   constructor(private myService: YoutubeApiService, private httpclient: HttpClient,public sanitizer: DomSanitizer) {
   }
@@ -43,18 +46,22 @@ export class HomeComponent {
       this.myService.getmeriBassai().subscribe((data) => this.meriBassaiData = data);
       this.myService.getHakkaHakki().subscribe((data) => this.hakkaHakkiData = data);
       this.myService.getNepaliShortMovie().subscribe((data) => this.shortMovieData = data);
-     this.myService.getMovieTrailer().subscribe((data) => this.movieTrailer = data);
-    this.myService.hindiMovieTrailer().subscribe((data) => this.hindiTrailer = data);
-    this.myService.getLokDohori().subscribe((data) => this.lokDohori = data);
-    this.myService.allModernSongs().subscribe((data) => this.modernSongs = data);
-    this.myService.prankVideo().subscribe((data) => this.nepaliPrank = data);
+      this.myService.getMovieTrailer().subscribe((data) => this.movieTrailer = data);
+      this.myService.hindiMovieTrailer().subscribe((data) => this.hindiTrailer = data);
+      this.myService.getLokDohori().subscribe((data) => this.lokDohori = data);
+      this.myService.allModernSongs().subscribe((data) => this.modernSongs = data);
+      this.myService.prankVideo().subscribe((data) => this.nepaliPrank = data);
       //console.log("BreakFailApiCall",this.breakFailData);
   }
   close(){
     this.showModel = false;
   }
 
-  video(id){
+   video(id){
+    this.popUp.childVideo(id);
+   }
+
+  /*video(id){
     //console.log(id);
     this.showModel = true;
     //this.popUp.launchVideo();
@@ -64,7 +71,7 @@ export class HomeComponent {
     console.log(this.videoUrl);
 
     // console.log("ID",id);
-  }
+  }*/
   moreInfo(){
     if(!this.showRed){
       this.showRed = true;

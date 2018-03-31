@@ -1,4 +1,22 @@
-/* The Modal (background) */
+@media only screen
+and (device-width : 375px)
+and (device-height : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+  .modal-content {
+    width:100% !important;
+  }
+}
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  .modal-content {
+    width:100% !important;
+  }
+}
+
 .modal {
   display: block; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -11,7 +29,6 @@
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
@@ -19,15 +36,27 @@
   padding: 20px;
   border: 1px solid #888;
   width: 50%;
-  height : 50%/* Could be more or less, depending on screen size */
+  height : 50%;
+  z-index:555;
+
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
   float: right;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 16px;
+  /* font-weight: bold; */
+  z-index: 50;
+  border-radius: 52%;
+  top: 1px;
+  left: 0px;
+  color: red;
+  opacity: 1;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  position: absolute;
+  padding-right: 4px;
+
 }
 
 .close:hover,
@@ -35,4 +64,8 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+  color: red;
+  opacity:1;
+  background: red;
+  color: white;
 }

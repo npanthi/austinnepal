@@ -21,7 +21,7 @@ movieName :any;
   constructor(private youtubeService:YoutubeApiService){}
 
 ngOnInit() {
-  console.log("hi this is work");
+
 }
 
  findVideo(value){
