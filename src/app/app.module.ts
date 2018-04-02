@@ -81,12 +81,12 @@ import { SearchComponent } from './search/search.component';
         component: ContactComponent
       },
       {
-        path : 'search',
+        path : 'search/:value',
         component: SearchComponent
       },
     ])
   ],
-  providers: [YoutubeApiService,PopUpModelComponent],
+  providers: [YoutubeApiService,PopUpModelComponent,SearchComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {

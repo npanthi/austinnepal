@@ -50,7 +50,8 @@ this.initVideo();
   this.movies(this.movieFromUrl[2]);
   }
 
-  video(id){
+  video(id,i){
+
     this.popUp.childVideo(id);
 }
   /*video(id){
@@ -64,7 +65,6 @@ this.initVideo();
 
     // console.log("ID",id);
   }*/
-
 
   close(){
     this.showModel = false;

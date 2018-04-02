@@ -28,7 +28,7 @@ this.launchVideo();
     //this.showModel = true;
     this.youtubeId = id;
     this.videoUrl = this.youtubeVideoUrl + id;
-    console.log(this.videoUrl);
+    console.log("Play Video", this.videoUrl);
 
     // console.log("ID",id);
   }

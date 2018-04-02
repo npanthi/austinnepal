@@ -1,3 +1,23 @@
-<p>
-  search works!
-</p>
+
+<div class="row searchWrapper">
+  <div *ngIf="!listOfVideo" class="loader row">
+  </div>
+
+  <div *ngFor="let data of listOfVideo.items; let i=index" >
+  <span *ngIf="i<50" class="col-lg-3 col-xl-3 col-md-3 col-sm-6">
+<!--<a href="javascript:void(0)" ><span class="moviesTitle" (click)="video(data.contentDetails.upload.videoId)">{{data.snippet.title}}</span></a>-->
+   <span style="height:5px; width:80%;overflow: hidden;">{{data.snippet.title}}</span>
+   <span>
+     <a href="javascript:void(0)" ><img class="movieImage"[src]="data.snippet.thumbnails.medium.url" alt="Image not found"  width="268" height="data.snippet.thumbnails.medium.height"/><br>
+  <button class="playButton" (click)="video(data.snippet.resourceId.videoId)">
+            <span class="insidePlayButton"></span>
+        </button>
+    </a>
+    <hr/>
+  </span>
+
+  </span>
+  </div>
+</div>
+
+<app-pop-up-model></app-pop-up-model>

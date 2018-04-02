@@ -64,12 +64,22 @@
   background-color: black;
 }
 
-@media only screen and (max-width:1020px) {
+@media only screen and (max-width:800px) {
   .hide_on_mobile {
     display: none !important;}
+  .show-On-Mobile {
+    display:block;
+  }
 }
 
+.show-On-Mobile {
+  display:none;
+}
 
+.searchBox {
+  margin-left: 4px;
+  margin-right: 10px;
+}
 /*NEED TO DELETE */
 
 /* Dropdown Button */

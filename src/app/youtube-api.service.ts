@@ -8,6 +8,8 @@ export class YoutubeApiService {
   name : string = " ";
   videoContent:string='';
   youtubeData : any[];
+ youtubeSearching : string;
+  keywordSearch :string;
   myAPIKey : string = "AIzaSyDpgdG4ipJ5NyrmDqTpCLY5bnN3_lv0dnU";
   url:string = "https://www.googleapis.com/youtube/v3/activities?part=snippet%2CcontentDetails&channelId=UC08i2mnmdrJwu-Lq4zDZKYg&maxResults=50&key=AIzaSyDpgdG4ipJ5NyrmDqTpCLY5bnN3_lv0dnU"
 
@@ -31,7 +33,8 @@ export class YoutubeApiService {
 
 
 
-  searchAnything : string = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q="+this.videoContent+"&key="+this.myAPIKey;
+  /*searchAnything : string = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q="+this.videoContent+"&key="+this.myAPIKey;*/
+  searchYoutubeVideo :string = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q=anyValue&key=" + this.myAPIKey;
    constructor(private httpService:HttpClient) { }
 
 getHindiMovie(){
@@ -95,8 +98,9 @@ getHighlightMovies(){
   }
   searchVideo(value){
     this.videoContent = value;
-    console.log("value",value);
-    return this.httpService.get(this.searchAnything);
+    console.log("videoContent",this.videoContent);
+     this.youtubeSearching = this.searchYoutubeVideo.replace('anyValue',value);
+    return this.httpService.get(this.youtubeSearching);
 }
   findVideo(name){
     console.log(name);
