@@ -8,8 +8,8 @@
 <!--<a href="javascript:void(0)" ><span class="moviesTitle" (click)="video(data.contentDetails.upload.videoId)">{{data.snippet.title}}</span></a>-->
    <span style="height:5px; width:80%;overflow: hidden;">{{data.snippet.title}}</span>
    <span>
-     <a href="javascript:void(0)" ><img class="movieImage"[src]="data.snippet.thumbnails.medium.url" alt="Image not found"  width="268" height="data.snippet.thumbnails.medium.height"/><br>
-  <button class="playButton" (click)="video(data.snippet.resourceId.videoId)">
+   <a href="javascript:void(0)" ><img class="movieImage"[src]="data.snippet.thumbnails.medium.url" alt="Image not found"  width="268" height="data.snippet.thumbnails.medium.height"/><br>
+  <button class="playButton" (click)="video(data.id.videoId)">
             <span class="insidePlayButton"></span>
         </button>
     </a>
