@@ -3,4 +3,12 @@
 }
 .panel-footer {
   background-color: black;
+  min-height: 50px;
+
+}
+.panel-footer span {
+  color:white;
+  float: right;
+  position: relative;
+  right:50%;
 }

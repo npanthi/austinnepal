@@ -1,0 +1,11 @@
+.message  {
+  min-height:50px;
+}
+.row {
+  margin-bottom:10px;
+  margin-left:10px;
+  margin-right:10px;
+}
+.col-sm-6 {
+  margin-bottom:10px;
+}

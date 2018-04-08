@@ -72,13 +72,18 @@ export class HomeComponent implements OnInit{
 
     // console.log("ID",id);
   }*/
+
+  clickMore(url){
+    console.log("clicked for Homestuff",url);
+  }
+
   moreInfo(){
     if(!this.showRed){
       this.showRed = true;
     }
      else
       this.showRed = false;
-       console.log("Clicked on Hakka Hakki",this.showRed);
+       /*console.log("Clicked on Hakka Hakki",this.showRed);*/
   }
 
 }

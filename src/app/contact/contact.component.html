@@ -15,6 +15,39 @@
 </div>
 -->
 <div style="min-height:400px">
-  This page is under construction...
+
+  <form class="form-group mb-3" name="userForm" (ngSubmit)="onSubmit(form.value)" #form="ngForm">
+    <div class="row">
+    <div class="col-sm-6">
+      <label>First Name</label>
+      <input class="form-control" name="firstName"/>
+    </div>
+    <div class="col-sm-6">
+      <label>Last Name</label>
+      <input class="form-control"  name="lastName"/>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <label>Phone Number</label>
+        <input type="phone" class="form-control" name="phoneNumber" placeholder="234-443-4432" minlength="10" maxlength="10"/>
+      </div>
+      <div class="col-sm-6">
+        <label>Email Address</label>
+        <input type="email" class="form-control" name="email" placeholder="abc@gm.com"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <label>Message</label>
+        <textarea type="text" class="form-control message" name="message"  minlength="10" maxlength="200"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+    </div>
+  </form>
 </div>
 
