@@ -4,6 +4,8 @@ import {HttpClient} from "@angular/common/http";
 import { DomSanitizer } from '@angular/platform-browser';
 import {PopUpModelComponent} from "../pop-up-model/pop-up-model.component";
 
+
+
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
@@ -72,6 +74,10 @@ export class HomeComponent implements OnInit{
 
     // console.log("ID",id);
   }*/
+
+  changeDate(date){
+    console.log(date);
+  }
 
   clickMore(url){
     console.log("clicked for Homestuff",url);

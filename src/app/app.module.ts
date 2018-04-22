@@ -20,6 +20,9 @@ import { AustinsidebarComponent } from './austinsidebar/austinsidebar.component'
 import { NepalsidebarComponent } from './nepalsidebar/nepalsidebar.component';
 import { PopUpModelComponent } from './pop-up-model/pop-up-model.component';
 import { SearchComponent } from './search/search.component';
+import { CustomDatePipe } from './custom-date.pipe';
+
+
 
 
 
@@ -39,6 +42,9 @@ import { SearchComponent } from './search/search.component';
     NepalsidebarComponent,
     PopUpModelComponent,
     SearchComponent,
+    CustomDatePipe,
+
+
 
 
 
@@ -86,7 +92,7 @@ import { SearchComponent } from './search/search.component';
       },
     ])
   ],
-  providers: [YoutubeApiService,PopUpModelComponent,SearchComponent],
+  providers: [YoutubeApiService,PopUpModelComponent,SearchComponent,CustomDatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule {

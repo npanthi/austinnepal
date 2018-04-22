@@ -1,4 +1,4 @@
-@media only screen
+/*@media only screen
 and (device-width : 375px)
 and (device-height : 812px)
 and (-webkit-device-pixel-ratio : 3) {
@@ -26,7 +26,7 @@ and (orientation: portrait) {
   .modal-content {
     width:100% !important;
   }
-}
+}*/
 
 .modal {
   display: block; /* Hidden by default */
@@ -49,6 +49,7 @@ and (orientation: portrait) {
   width: 50%;
   height : 50%;
   z-index:555;
+
 
 }
 

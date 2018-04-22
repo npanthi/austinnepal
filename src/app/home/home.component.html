@@ -5,9 +5,9 @@
     <hr>
     <span><h3 [ngClass]="">Hakka Haki<span class="blink_me">**Latest** </span></h3></span>
     <hr>
-      <div *ngFor="let data of hakkaHakkiData.items; let i=index">
-    <span *ngIf="i<1">
-      <span>Date:{{data.snippet.publishedAt | json}}</span>
+      <div *ngFor="let data of hakkaHakkiData.items; let first=first;">
+    <span *ngIf="first">
+      <span>Released on:{{data.snippet.publishedAt | customDate}}</span>
       <a href="javascript:void(0)">
       <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
       <a href="javascript:void(0)" ><img  [src]="data.snippet.thumbnails.medium.url" alt="Image not found"  height="data.snippet.thumbnails.small.height"/></a>
@@ -23,9 +23,10 @@
     <hr>
     <span><h3>Meri Bassai</h3></span>
     <hr>
-    <div *ngFor="let data of meriBassaiData.items; let i=index">
+    <div *ngFor="let data of meriBassaiData.items; let i=first">
 
-    <span *ngIf="i<1">
+    <span *ngIf="i">
+      <span>Released on:{{data.snippet.publishedAt | date :'fullDate'}}</span>
       <a href="javascript:void(0)" >
         <span class="moviesTitle" style="overflow:hidden;" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
       <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
@@ -44,6 +45,7 @@
     <div *ngFor="let data of breakFailData.items; let i=index">
 
     <span *ngIf="i<1">
+      <span>Released on:{{data.snippet.publishedAt | date :'fullDate'}}</span>
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
        <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
@@ -61,6 +63,7 @@
     <div *ngFor="let data of bhadragoalData.items; let i=index">
 
     <span *ngIf="i<1">
+      <span>Released on:{{data.snippet.publishedAt | date :'fullDate'}}</span>
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
         <a href="javascript:void(0)" ><img [src]="data.snippet.thumbnails.medium.url" alt="Image not found" (click)="video(data.snippet.resourceId.videoId)"  height="data.snippet.thumbnails.small.height"/></a>
