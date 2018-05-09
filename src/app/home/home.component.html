@@ -62,7 +62,7 @@
     <hr>
     <div *ngFor="let data of bhadragoalData.items; let i=index">
 
-    <!--<span *ngIf="i<1">
+    <span *ngIf="i<1">
       <span>Released on:{{data.snippet.publishedAt | date :'fullDate'}}</span>
       <a href="javascript:void(0)" >
         <span class="moviesTitle" (click)="video(data.snippet.resourceId.videoId)">{{data.snippet.title}}</span></a><br/>
@@ -70,7 +70,7 @@
       <button class="playButton playButtonAdjustment" (click)="video(data.snippet.resourceId.videoId)" >
             <span class="insidePlayButton"></span>
         </button>
-    </span>-->
+    </span>
     </div>
   </div>
 
