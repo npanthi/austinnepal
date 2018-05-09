@@ -7,11 +7,11 @@ const path = require('path');
 
 app.use(express.static(__dirname + '/dist'));
 
-let xyz = app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 8080);
 
 
 
-console.log("Nisan Port",xyz);
+
 let jsonObject = {'name': 'nisan',
                   'age' : '26',
                     'city': "dallas"};
