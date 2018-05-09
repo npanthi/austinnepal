@@ -7,16 +7,15 @@ const path = require('path');
 
 app.use(express.static(__dirname + '/dist'));
 
-/*let xyz = app.listen(process.env.PORT || 8080);*/
+let xyz = app.listen(process.env.PORT || 8080);
 
-let port = 3000;
-app.listen(port);
 
-/*console.log("Nisan Port",xyz);*/
+
+console.log("Nisan Port",xyz);
 let jsonObject = {'name': 'nisan',
                   'age' : '26',
                     'city': "dallas"};
-
+console.log("json object", jsonObject);
 app.get('/testFile',(req,res)=>{
   if(res.error){
     console.log("something went wrong");
