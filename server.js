@@ -7,8 +7,25 @@ const path = require('path');
 
 app.use(express.static(__dirname + '/dist'));
 
-app.listen(process.env.PORT || 8080);
+/*let xyz = app.listen(process.env.PORT || 8080);*/
+
+let port = 3000;
+app.listen(port);
+
+/*console.log("Nisan Port",xyz);*/
+let jsonObject = {'name': 'nisan',
+                  'age' : '26',
+                    'city': "dallas"};
+
+app.get('/testFile',(req,res)=>{
+  if(res.error){
+    console.log("something went wrong");
+  }
+  res.json(jsonObject);
+})
 
 app.get('/*',function(req,res){
   res.sendFile(path.join(__dirname + '/dist/index.html'));
 })
+
+console.log("we are listening at" + port);

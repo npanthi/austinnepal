@@ -21,6 +21,7 @@ import { NepalsidebarComponent } from './nepalsidebar/nepalsidebar.component';
 import { PopUpModelComponent } from './pop-up-model/pop-up-model.component';
 import { SearchComponent } from './search/search.component';
 import { CustomDatePipe } from './custom-date.pipe';
+import { PracticeDirective } from './practice.directive';
 
 
 
@@ -43,6 +44,7 @@ import { CustomDatePipe } from './custom-date.pipe';
     PopUpModelComponent,
     SearchComponent,
     CustomDatePipe,
+    PracticeDirective,
 
 
 
