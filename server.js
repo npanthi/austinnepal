@@ -12,7 +12,7 @@ app.listen(process.env.PORT || 8080);
 
 
 
-let jsonObject = {'name': 'nisan',
+/*let jsonObject = {'name': 'nisan',
                   'age' : '26',
                     'city': "dallas"};
 console.log("json object", jsonObject);
@@ -21,7 +21,7 @@ app.get('/testFile',(req,res)=>{
     console.log("something went wrong");
   }
   res.json(jsonObject);
-})
+})*/
 
 app.get('/*',function(req,res){
   res.sendFile(path.join(__dirname + '/dist/index.html'));
