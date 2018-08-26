@@ -158,3 +158,54 @@
   margin-left:0px;
   margin-right: 0px;
 }
+.movieTitle {
+  height: 50px;
+  width: 80%;
+  margin:5%;
+}
+.fa {
+  font-size: 24px;
+  /* left: -18px; */
+  position: absolute;
+  left: 83%;
+  cursor: pointer;
+
+}
+
+@media only screen and (max-width: 900px) {
+  .fa {
+    left: 95%;
+    cursor: none;
+    display: none;
+  }
+}
+.nameButton {
+  visibility: hidden;
+  position: absolute;
+  z-index: 9999;
+  top: -8%;
+  width: 80%;
+  font-size: 14px;
+  background: black;
+  color: white;
+  margin: 4%;
+}
+.parentForTitle:hover  .nameButton {
+  visibility: visible;
+}
+
+@media only screen and (max-width: 900px) {
+  .nameButton {
+    visibility: visible;
+    position: relative;
+    margin-left: 9%;
+  }
+  .playButton {
+    top: 11%;
+  }
+}
+@media only screen  and (max-width: 1023px){
+  .playButton {
+    top: 23%;
+  }
+}

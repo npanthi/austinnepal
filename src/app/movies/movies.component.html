@@ -6,10 +6,15 @@
  <span *ngIf="i<50" class="col-lg-3 col-xl-3 col-md-3 col-sm-6">
 <!--<a href="javascript:void(0)" ><span class="moviesTitle" (click)="video(data.contentDetails.upload.videoId)">{{data.snippet.title}}</span></a>-->
   <span>
-     <a href="javascript:void(0)" ><img class="movieImage"[src]="data.snippet.thumbnails.medium.url" alt="Image not found"  width="268" height="data.snippet.thumbnails.medium.height"/><br>
+     <a href="javascript:void(0)" ><img class="movieImage"  style="font-size:48px;color:red" [src]="data.snippet.thumbnails.medium.url" alt="Image not found"  width="268" height="data.snippet.thumbnails.medium.height"/>
+      <span class="parentForTitle"> <span style="font-size:24px" class="fa titleIcon">&#xf05a;</span><br>
+       <button class="nameButton">{{data.snippet.title}}</button>
+     </span>
+
   <button class="playButton" (click)="video(data.snippet.resourceId.videoId)">
             <span class="insidePlayButton"></span>
         </button>
+
     </a>
     <hr/>
   </span>
