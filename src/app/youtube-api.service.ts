@@ -16,10 +16,10 @@ export class YoutubeApiService {
   myPlayListURL : string = "https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=UCj-BQGbXXIuMFS04ZgvIeRg&maxResults=50&key=AIzaSyDpgdG4ipJ5NyrmDqTpCLY5bnN3_lv0dnU"
 
    breakFailPlayListAPI : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL5IdznwvT_05Ltok6998IsFIO-qxKRzyc&maxResults=50&key=" + this.myAPIKey;
-   bhadragolPlayListAPI : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL5IdznwvT_07yiUGA2964s0bRSAGfvnbD&maxResults=50&key=" + this.myAPIKey;
+   bhadragolPlayListAPI : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLfv8qK9bhVllwYvtZNd0qp5Pzf7kTb5Q_&maxResults=50&key=" + this.myAPIKey;
    meriBassaiPlayListAPI : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL5IdznwvT_06KpomPRMReY_cHcR_R7MmH&maxResults=50&key=" + this.myAPIKey;
    jireKhursaniPlayListAPI : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL5IdznwvT_05tlx4_057jpfjziUxKExUT&maxResults=50&key="+this.myAPIKey;
-   hakkahakiPlayListAPI : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL9DARAjEDbdCEMXfmXROBdONrAPYi3ovR&maxResults=50&key=" + this.myAPIKey;
+   hakkahakiPlayListAPI : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UUxwa4RK4FCq-1LR5l5Dh8vA&maxResults=50&key=" + this.myAPIKey;
    nepaliMoviePlayListAPI : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL9DARAjEDbdD8EN5ruXaXQq5qx-PGKq6k&maxResults=50&key=" + this.myAPIKey;
    nepaliShortMoviesPlayListAPI : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL9DARAjEDbdDIkFuEFVmnq1cP3PJcrhzA&maxResults=50&key=" + this.myAPIKey;
    allModernSongAPIList : string = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PL9DARAjEDbdDTnkaFBzRWjnbgkqGnqe2i&maxResults=50&key="+ this.myAPIKey;

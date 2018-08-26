@@ -97,7 +97,7 @@ img  {
   animation: blinker 1s linear infinite;
   color:red;
   padding-left:50px;
-  display: none;
+
 }
 
 @keyframes blinker {

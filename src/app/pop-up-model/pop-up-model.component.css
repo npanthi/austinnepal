@@ -46,12 +46,19 @@ and (orientation: portrait) {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 100%;
+  width: 50%;
   height : 50%;
   z-index:555;
 
 
 }
+@media only screen and (max-width: 900px) {
+  .modal-content {
+    width: 90%;
+  }
+}
+
+
 
 /* The Close Button */
 .close {
@@ -80,4 +87,20 @@ and (orientation: portrait) {
   opacity:1;
   background: red;
   color: white;
+}
+
+.modalCloseButton {
+  height: 20px;
+  width: 20px;
+  top: 2px;
+  position: absolute;
+  right: 1px;
+  cursor: pointer;
+}
+
+.modalCloseButton:hover {
+  background: red;
+  color: white;
+
+  border-radius: 50%;
 }
