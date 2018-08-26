@@ -182,7 +182,7 @@
 .nameButton {
   visibility: hidden;
   position: absolute;
-  z-index: 9999;
+  z-index: 0;
   top: -8%;
   width: 80%;
   font-size: 14px;
