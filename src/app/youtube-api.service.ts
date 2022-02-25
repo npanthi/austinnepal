@@ -10,7 +10,7 @@ export class YoutubeApiService {
   youtubeData : any[];
  youtubeSearching : string;
   keywordSearch :string;
-  myAPIKey : string = "AIzaSyARnJzLwO5gFSvldeq6x1IuhayiMtP_pNA";
+  myAPIKey : string = "AIzaSyAQHEWqr-s-f0yjLkTOtrd-tlGDHK0HDCE";
   url:string = "https://www.googleapis.com/youtube/v3/activities?part=snippet%2CcontentDetails&channelId=UC08i2mnmdrJwu-Lq4zDZKYg&maxResults=50&key=AIzaSyDpgdG4ipJ5NyrmDqTpCLY5bnN3_lv0dnU"
 
   myPlayListURL : string = "https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=UCj-BQGbXXIuMFS04ZgvIeRg&maxResults=50&key=AIzaSyDpgdG4ipJ5NyrmDqTpCLY5bnN3_lv0dnU"
